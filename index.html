@@ -4,22 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trAECing</title>
-    <style>
-        .widget-container {
-            width: 100%;
-            height: 500px; /* Adjust height as needed */
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
 
 <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px;">
     <h1>Sustainability Challenge</h1>
-    <p>Explore the essential pillars of sustainability—decarbonization, resiliency, circularity, and biodiversity—through real-time insights from Google Trends. Discover how the push towards reducing carbon footprints, enhancing environmental resilience, embracing circular economic models, and preserving biodiversity shapes our world and influences sustainable practices.</p>
-    
-    <div class="widget-container" id="timeseries-widget"></div>
-    <div class="widget-container" id="geomap-widget"></div>
-    
+    <p>Explore the essential pillars of sustainability. Discover how the push towards reducing carbon footprints, enhancing social resilience, embracing circular economic models, and preserving biodiversity shapes our industry and promotes sustainable practices.</p>
     <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3815_RC01/embed_loader.js"></script>
     <script type="text/javascript">
         trends.embed.renderExploreWidget("TIMESERIES", {
@@ -34,21 +23,7 @@
         }, {
             "exploreQuery": "cat=48&date=today%205-y&q=%2Fm%2F02vk5rp,%2Fm%2F09y23_,%2Fm%2F0gtxxx2,%2Fm%2F0c8g5&hl=en-GB",
             "guestPath": "https://trends.google.com:443/trends/embed/"
-        }, "timeseries-widget");
-        
-        trends.embed.renderExploreWidget("GEO_MAP", {
-            "comparisonItem": [
-                {"keyword": "/m/02vk5rp", "geo": "", "time": "today 5-y"},
-                {"keyword": "/m/09y23_", "geo": "", "time": "today 5-y"},
-                {"keyword": "/m/0gtxxx2", "geo": "", "time": "today 5-y"},
-                {"keyword": "/m/0c8g5", "geo": "", "time": "today 5-y"}
-            ],
-            "category": 48,
-            "property": ""
-        }, {
-            "exploreQuery": "cat=48&date=today%205-y&q=%2Fm%2F02vk5rp,%2Fm%2F09y23_,%2Fm%2F0gtxxx2,%2Fm%2F0c8g5&hl=en-GB",
-            "guestPath": "https://trends.google.com:443/trends/embed/"
-        }, "geomap-widget");
+        });
     </script>
 </body>
 </html>
