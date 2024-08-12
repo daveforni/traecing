@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trAECing</title>
+    <style>
+        .widget-container {
+            width: 100%;
+            height: 500px; /* Adjust height as needed */
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px;">
     <h1>trAECing</h1>
     <p>Welcome to trAECing, your ultimate navigator for exploring trends in the Architecture, Engineering, and Construction (AEC) industry. Dive into the latest developments in sustainability, digitalization, and technologies with insights powered by Google Trends. Our platform offers a real-time look at how these critical areas are evolving, helping you stay ahead in a rapidly changing landscape. Key patterns, emerging innovations, and the future direction of the AEC industry all in one place.</p>
+    
     <h2>Sustainability Challenge</h2>
     <p>Discover how the push towards reducing carbon footprints, enhancing social resilience, embracing circular economic models, and preserving biodiversity promotes sustainable practices.</p>
+    
+    <div class="widget-container" id="sustainability-widget"></div>
+    
     <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3815_RC01/embed_loader.js"></script>
     <script type="text/javascript">
         trends.embed.renderExploreWidget("TIMESERIES", {
@@ -25,10 +36,13 @@
         }, {
             "exploreQuery": "cat=48&date=all&q=%2Fm%2F02vk5rp,%2Fm%2F09y23_,%2Fm%2F0gtxxx2,%2Fm%2F0c8g5&hl=en-GB",
             "guestPath": "https://trends.google.com:443/trends/embed/"
-        }, "timeseries-widget");
+        }, "sustainability-widget");
     </script>
+    
     <h2>Digital Revolution</h2>
-    <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3815_RC01/embed_loader.js"></script>
+    <p>This section provides a comprehensive look at how these technologies are reshaping the AEC industry, driving innovation, and enhancing efficiency.</p>
+    <div class="widget-container" id="digital-revolution-widget"></div>
+    
     <script type="text/javascript">
         trends.embed.renderExploreWidget("TIMESERIES", {
             "comparisonItem": [
@@ -42,7 +56,7 @@
         }, {
             "exploreQuery": "cat=48&date=all&q=%2Fm%2F0b9qp4,%2Fm%2F07_ny,%2Fm%2F02vnd10,%2Fm%2F02y_9m3&hl=en-GB",
             "guestPath": "https://trends.google.com:443/trends/embed/"
-        }, "timeseries-widget");
+        }, "digital-revolution-widget");
     </script>
 
 </body>
