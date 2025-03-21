@@ -1,4 +1,4 @@
-# Google Trends Widget
+# trAECing
 This is a simple GitHub Pages site embedding multiple Google Trends widgets to display trends for sustainability and digitalization topics in the AEC industry.
 
 ## How to View
